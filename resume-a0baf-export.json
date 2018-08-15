@@ -1,0 +1,122 @@
+{
+   "profile" : {
+	"0":{
+		"name" : "Ganesh Parasuraman",
+		"email" : "ganeshparasuraman@gmail.com",
+		"linkedin" : "https://www.linkedin.com/in/ganeshparasuraman",
+		"mobile" : "+91 98408 10996",
+		"title" : "Java/J2EE & IoT Architect",
+		"profileImage" : ""
+   }
+   },
+   "headingtags":[
+      "Architect",
+      "Java/J2EE Architect",
+      "IoT Architect",
+      "Overall 12 years of experience"
+   ],
+   "professionalsummary" :[
+	  "A highly organized and well informed Software professional with strong attention to details targeted at handling IT architectural design, consulting on Information systems strategy and managing IT systems in an enterprise.",
+	  "Proficient in creating architecture, design with focus to client requirements offering creative and coherent solutions.",
+	  "Professionally skilled in communication and adept in managing strong relationships at all levels of an organization."
+   ],
+   "education" :[
+	{"degree" : "Bachelor of Engineering","degreeShortName" : "B.E","major" : "Electronics and Communication Engineering","majorShortName" : "ECE","type" : "full time", "yearStarted" : "2000","yearCompleted" : "2004",
+			"universityName" : "Bharathidasan University", "CollegeName" : "Shanmugha College of Engineering","location" : "Thanjavur,Tamilnadu" , "country" : "India", "mark" : "4376" , "maximum" : "5700","unit" : "100", "result" : "First Class with Distinction" ,
+			"imgUrl" : ""},
+	{"degree" : "Master of Sciences","degreeShortName" : "MS","major" : "Management Information Systems","majorShortName" : "MIS","type" : "full time", "yearStarted" : "2008","yearCompleted" : "2010",
+			"universityName" : "University of Illinois", "CollegeName" : "Liautaud Graduate School of Business","location" : "Chicago, IL" , "country" : "US", "mark" : "136" , "maximum" : "144","unit" : "4", "result" : "" , "imgUrl" : ""},
+	{"degree" : "","degreeShortName" : "","major" : "Embedded Systems Programming","majorShortName" : "ESP","type" : "short-term course", "yearStarted" : "2004","yearCompleted" : "2004",
+			"universityName" : "Anna University", "CollegeName" : "AU-PERS Center for Professional Education Development","location" : "Chennai, Tamilnadu" , "country" : "IN", "mark" : "95" , "maximum" : "100","unit" : "100", "result" : "S Grade", "imgUrl" : ""}	
+   ],
+   "certification" : [
+    { "name" : "Sun Certified Java Professional" , "shortName" : "SCJP" , "version" : "1.4" , "dateObtained" : "07-Mar-2006" , "expiryDate" : "" , "certificationProvider" : "SUN Microsystems"},
+   { "name" : "Predix Certified Developer" , "shortName" : "PCD" , "version" : "" , "dateObtained" : "31-Mar-2018" , "expiryDate" : "31-Mar-2020" , "certificationProvider" : "GE Predix"}
+		],
+   "experience":{
+      "0":{
+         "companyName":"Tata Consultancy Services Limited",
+         "departmentName":"WoltersKluwer Incorporated",
+         "description":"WoltersKluwer Inc / CCH Inc is a leading e-publication house in US",
+         "endDate":"Aug-2008",
+         "id":1,
+         "imgUrl":"https://firebasestorage.googleapis.com/v0/b/resume-a0baf.appspot.com/o/logos%2Ftcslogo.png.png?alt=media&token=becfd110-4e15-4bd5-b3e8-ddcf2c246870",
+         "positionLocation":"Chennai,India",
+         "positionName":"Assistant Systems Engineer",
+         "startDate":"Mar-2005",
+         "work":"Lead in project in delivering e-Pub solution to WoltersKluwer Software engineering and managing the project for a financial and legal publishing house"
+      },
+      "1":{
+         "companyName":"University of Illinois at Chicago",
+         "departmentName":"LCSL - College of Liberal Arts and Sciences",
+         "description":"Lead in the IT department of the school",
+         "endDate":"Jan-2010",
+         "id":2,
+         "imgUrl":"https://firebasestorage.googleapis.com/v0/b/resume-a0baf.appspot.com/o/logos%2Fuiclogo.PNG?alt=media&token=5c529569-af9c-4bd5-b58e-11e94e2ce73a",
+         "positionLocation":"Chicago, IL",
+         "positionName":"REACH Contact",
+         "startDate":"Sep-2008",
+         "work":"Application design and development in Java technologies. Analyzing prospective student’s data and providing the recommendations to the advisor for admission."
+      },
+      "2":{
+         "companyName":"Texas A & M University",
+         "departmentName":"Information Technology Solutions and Support",
+         "description":"Team lead in ITSS department that builds and maintains application in the university",
+         "endDate":"Oct-2010",
+         "id":3,
+         "imgUrl":"https://firebasestorage.googleapis.com/v0/b/resume-a0baf.appspot.com/o/logos%2Ftamulogo.png?alt=media&token=ece280f2-75ea-47cb-bd7c-d06ba260b38b",
+         "positionLocation":"College Station, TX",
+         "positionName":"Sr Software Application Developer",
+         "startDate":"Jun-2010",
+         "work":"Application design and development in Java and .Net technologies that involves maintaining and enhancing application likes dining management, emergency notifications in the university"
+      },
+      "3":{
+         "companyName":"Tiptap Incorporated",
+         "departmentName":"",
+         "description":"Tiptap is a social site for personalizing the consumers’ search question to corresponding advisors",
+         "endDate":"Mar-2011",
+         "id":4,
+         "imgUrl":"https://firebasestorage.googleapis.com/v0/b/resume-a0baf.appspot.com/o/logos%2Ftiptaplogo.png?alt=media&token=905e87a5-9f3a-4964-a72c-bbbb617ba573",
+         "positionLocation":"Cambridge, MA",
+         "positionName":"Technical Architect",
+         "startDate":"Oct-2010",
+         "work":"Designing a jump start framework for agile development. Designing models to identify opinion setters and influencers in a social networking site"
+      },
+      "4":{
+         "companyName":"IBS Software Services Ltd.",
+         "departmentName":"iFly Loyalty / Loyalty Management /CRM",
+         "description":"Architect in loyalty solution in travel and hospitality sector ",
+         "endDate":"Oct-2014",
+         "id":5,
+         "imgUrl":"https://firebasestorage.googleapis.com/v0/b/resume-a0baf.appspot.com/o/logos%2Fibslogo.jpg?alt=media&token=43b8efdf-6754-430e-86ac-1d9b10ee106a",
+         "positionLocation":"Trivandrum, India",
+         "positionName":"Project Architect",
+         "startDate":"Apr-2011",
+         "work":"Designing and implementing the IBS's loyalty management system for Airlines, Hotels and Retail chains"
+      },
+	  "5":{
+         "companyName":"Lister Technologies",
+         "departmentName":"Services Delivery",
+         "description":"Architect in Product Engineering Practice",
+         "endDate":"Jun-2016",
+         "id":6,
+         "imgUrl":"https://firebasestorage.googleapis.com/v0/b/resume-a0baf.appspot.com/o/logos%2Flisterlogo.jpg?alt=media&token=2461eaf2-e80e-4146-b26f-74291da8ab9d",
+         "positionLocation":"Chennai, India",
+         "positionName":"Technical Lead",
+         "startDate":"Nov-2014",
+         "work":"Creating fulfillment platforms, Managing delivery of Hospice management software and desgining a retail loyalty product"
+      },
+      "6":{
+         "companyName":"Cognizant",
+         "departmentName":"Cognizant Digital - IoT / Connected Products",
+         "description":"Architect in IoT solutions",
+         "endDate":"Till Now",
+         "id":7,
+         "imgUrl":"https://firebasestorage.googleapis.com/v0/b/resume-a0baf.appspot.com/o/logos%2Fctslogo.png?alt=media&token=628a75a8-6c96-4022-bdcc-ce6c48eb5e7d",
+         "positionLocation":"Chennai, India",
+         "positionName":"Manager,Projects",
+         "startDate":"Jun-2016",
+         "work":"Designing and implementing the Cognizant Digital's Connected products offerings"
+      }
+   }
+}

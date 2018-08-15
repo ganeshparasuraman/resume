@@ -1,0 +1,83 @@
+<body>
+  <!-- <div class="timeline">
+     <div *ngFor="let experience of experiencesObservable | async | reverse ; let i = index" [attr.data-index]="i" class="containertl animated card-delay-{{i+1}}"
+      [ngClass]="{'right fadeInRight':i%2 == 1,'left fadeInLeft':i%2 == 0}" >
+      <div class="content">
+        <div class="view hm-white-slight">
+          <img src="{{experience.imgUrl}}" class="img-fluid logo card_image" alt="">
+          <a>
+            <div class="mask waves-effect waves-light " mdbRippleRadius></div>
+          </a>
+        </div>
+        <div class="card-body text-center no-padding">
+          <h4 class="card-title">
+            <strong>
+              {{experience.companyName}}
+            </strong>
+          </h4>
+          <h5>
+            <i>{{experience.positionName}}</i>
+          </h5>
+          <p class="card-text">{{experience.description}}</p>
+          <div class="card-footer">
+            <span>
+              <mat-icon>date_range</mat-icon> {{experience.startDate}}
+               to {{experience.endDate}}</span>
+            <br/>
+            <span class="left-text">
+              <mat-icon>place</mat-icon> {{experience.positionLocation}}</span>
+          </div>
+        </div>
+        <div class="overlay">
+            <div class="view hm-white-slight">
+              <img src="{{experience.imgUrl}}" class="img-fluid logo-small" alt="">
+              <a>
+                <div class="mask waves-effect waves-light " mdbRippleRadius></div>
+              </a>
+            </div>
+            <div class="card-body text-center no-padding">
+            <h4 class="card-title">
+              <strong>
+                {{experience.companyName}}
+              </strong>
+            </h4>
+            <p class="card-text">{{experience.work}}</p>
+          </div>
+          </div>
+      </div>
+      
+    </div>
+  </div> -->
+  <mat-toolbar color="primary">
+      <span>Experience Summary</span>
+    </mat-toolbar>
+    <mat-toolbar>
+      <button mat-raised-button color="primary" (click)="changeIcon();alternate = !alternate;"><mat-icon>{{iconName}}</mat-icon></button>
+     </mat-toolbar>
+  <mgl-timeline [toggle]="toggle" [alternate]="alternate">
+    <mgl-timeline-entry *ngFor="let experience of experiencesObservable | async | reverse ; let i = index" [attr.data-index]="i" class="animated card-delay-{{i+1}} open"
+      [ngClass]="{'experiencecard-right fadeInRight':i%2 == 1,'experiencecard-left fadeInLeft':i%2 == 0}"  >
+        <mgl-timeline-entry-header>
+          <div><button mat-raised-button [color]="i%2 != 1 ? 'primary' : 'accent'">{{experience.companyName}}</button></div>
+        </mgl-timeline-entry-header>
+        <mgl-timeline-entry-content>
+            <mat-card [ngClass]="{'experiencecard-right':i%2 == 1,'experiencecard-left':i%2 == 0}"> 
+                <mat-card-title-group>
+            <mat-card-title>{{experience.positionName}}</mat-card-title>
+            <mat-card-subtitle><i><strong>{{experience.departmentName}}</strong></i></mat-card-subtitle>
+            <mat-card-content><mat-icon>date_range</mat-icon> {{experience.startDate}} to {{experience.endDate}}</mat-card-content>
+            </mat-card-title-group>
+            <mat-card-content>{{experience.description}}</mat-card-content>
+            <mat-card-content>{{experience.work}}</mat-card-content>
+            <mat-card-footer><mat-icon>place</mat-icon> {{experience.positionLocation}}</mat-card-footer>
+          </mat-card>
+        </mgl-timeline-entry-content>
+        <mgl-timeline-entry-dot class="dot" [size]="size" [color]="i%2 == 1 ? 'primary' : 'accent'">
+             <img class="fit" src="{{experience.imgUrl}}">
+        </mgl-timeline-entry-dot>
+        <mgl-timeline-entry-side class="side">{{experience.startDate | date : 'yyyy'}}</mgl-timeline-entry-side>
+      </mgl-timeline-entry>
+    </mgl-timeline>
+    
+
+</body>

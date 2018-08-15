@@ -1,0 +1,72 @@
+<!-- 
+<ngb-carousel>
+ <div class="forloop"  *ngFor="let summary of summaryObservable | async">
+    <ng-template ngbSlide >
+        <img  class="centerimage" src="https://farm9.staticflickr.com/8815/17616560080_a9d7698101_b.jpg" alt="sydney harbour">
+      <div class="carousel-caption">
+        <h3>{{summary}}</h3>
+      </div>
+    </ng-template>
+  </div>
+  </ngb-carousel> -->
+<div class="below-navbar"></div>
+
+
+  <div class="forloop" *ngFor="let profile of profileObservable | async; let i = index" [attr.data-index]="i">
+    <mat-card class="action-card alternate-theme" matRipple>
+      <mat-card-header class="cardheader">
+        <mat-card-title class="title-card">
+          <strong>{{profile.name}}</strong>
+        </mat-card-title>
+        <mat-card-subtitle class="subtitle-card">{{profile.title}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content class="card-content-root">
+        <span class="linkedin">
+          <a href="{{profile.linkedin}}" target="_blank">
+            <fa-icon [icon]="[ 'fab','linkedin']" size="4x"></fa-icon>
+          </a>
+        </span>
+      </mat-card-content>
+      <mat-card-content *ngIf="collapsed" class="card-content-root">
+        <p class="content-card">
+          <fa-icon [icon]="['fas', 'envelope']" size="2x">
+          </fa-icon>&nbsp;
+          <a href="mailto:{{profile.email}}">{{profile.email}}</a>
+        </p>
+        <p class="content-card">
+          <fa-icon [icon]="['fas', 'phone-square']" size="2x" style="color:teal;"></fa-icon> {{profile.mobile}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-mini-fab (click)="collapsed=!collapsed;changeIcon();" color="black">
+          <mat-icon color="accent">{{iconName}}</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+
+
+  <mat-card class="action-card alternate-theme" matRipple>
+    <mat-selection-list *ngIf="collapsed1">
+      <mat-list *ngFor="let summary of summaryObservable | async" class="card-list">
+        <p color="primary">{{summary}}</p>
+      </mat-list>
+    </mat-selection-list>
+    <mat-card-actions>
+      <button mat-mini-fab (click)="collapsed1=!collapsed1" color="black">
+        <mat-icon color="primary">add</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+  <div>
+    <!-- <angular-tag-cloud [data]="cloudData" [width]="options.width" [height]="options.height"
+      [overflow]="options.overflow" [zoomOnHover]="zoomOnHoverOptions">
+    </angular-tag-cloud> -->
+
+    <mat-chip-list >
+      <mat-chip *ngFor="let tag of tagObservable | async" color="accent" selected="true">{{tag}}</mat-chip>
+    </mat-chip-list>
+
+  </div>
+
+ 

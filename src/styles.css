@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~animate.css/animate.css";
+@import url('https://fonts.googleapis.com/css?family=Julee|Lancelot|PT+Sans|Averia+Gruesa+Libre|News+Cycle');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons ');
+
+/**
+font-family: 'PT Sans', sans-serif;
+font-family: 'Julee', cursive;
+font-family: 'Lancelot', cursive;
+font-family: 'Averia Gruesa Libre', cursive;
+font-family: 'News Cycle', sans-serif;
+**/

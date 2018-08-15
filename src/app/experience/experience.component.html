@@ -1,0 +1,44 @@
+  <div class="row scroll">
+    <div *ngFor="let experience of experiencesObservable | async | reverse ; let i = index" [attr.data-index]="i" 
+    class="col-lg-3 col-md-6 card animated bounceInDown card-delay-{{i+1}}">
+      <div class="view hm-white-slight">
+        <img src="{{experience.imgUrl}}" class="img-fluid logo" alt="">
+        <a>
+          <div class="mask waves-effect waves-light " mdbRippleRadius></div>
+        </a>
+      </div>
+      <div class="card-body text-center no-padding">
+        <h4 class="card-title">
+          <strong>
+            {{experience.companyName}}
+          </strong>
+        </h4>
+        <h5>
+          <i>{{experience.positionName}}</i>
+        </h5>
+        <p class="card-text">{{experience.description}}</p>
+        <div class="card-footer">
+          <span class="left"><mat-icon>date_range</mat-icon>  {{experience.startDate}} 
+            <!-- <mat-icon>arrow_forward</mat-icon> -->to {{experience.endDate}}</span> 
+          <br/>
+          <span class="left"><mat-icon>place</mat-icon> {{experience.positionLocation}}</span>
+        </div>
+      </div>
+      <div class="overlay text-center">
+        <div class="view hm-white-slight" >
+          <img src="{{experience.imgUrl}}" class="img-fluid logo-small" alt="">
+          <a>
+            <div class="mask waves-effect waves-light " mdbRippleRadius></div>
+          </a>
+        </div>
+        <h4 class="card-title">
+          <strong>
+            {{experience.companyName}}
+          </strong>
+        </h4>
+        <p class="card-text">{{experience.work}}</p>
+      </div>
+    </div>
+
+
+  </div>

@@ -1,0 +1,41 @@
+.logo {
+    max-height: 100px;
+    max-width: 100px;
+    object-fit: cover;
+    margin: 1px;
+}
+
+.logo-small {
+    max-height: 50px;
+    max-width: 50px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    background-color:aqua;
+  }
+  
+  .card:hover .overlay {
+    opacity: 1;
+    
+  }
+
+  .scroll {
+    overflow: auto;
+    height: 100%;
+    padding-top: 150px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    padding-right: 1px;
+    margin-left: 10px;
+}
+

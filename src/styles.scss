@@ -1,0 +1,57 @@
+@import '~@angular/material/theming';
+@import url('https://fonts.googleapis.com/css?family=Julee|Lancelot|PT+Sans|Averia+Gruesa+Libre|News+Cycle|Open+Sans');
+@include mat-core();
+
+
+$card-app-primary: mat-palette($mat-blue);
+$card-app-accent:  mat-palette($mat-cyan, 500, 900, A100);
+$card-app-warn:    mat-palette($mat-deep-orange);
+
+$card-app-theme: mat-light-theme($card-app-primary, $card-app-accent, $card-app-warn);
+
+@include angular-material-theme($card-app-theme);
+
+.alternate-theme {
+ max-width: 100%;
+  align-self: center;
+}
+
+.cardheader {
+    background-color: mat-color($card-app-primary, 50);
+    font-family: 'PT Sans', sans-serif;
+}
+
+.card-content-root {
+    background-color: mat-color($card-app-accent, 50);
+    font-family: 'PT Sans', sans-serif;
+}
+@for $i from 1 through 20 {
+    .summary-list-#{$i} {
+        animation-duration:1s;
+        animation-delay: #{$i}s;
+        -webkit-animation-duration:1s;
+        -webkit-animation-delay: #{$i}s;
+        -moz-animation-duration:1s;
+        -moz-animation-delay: #{$i}s;
+    }
+
+    .card-delay-#{$i} {
+        animation-duration:0.5s;
+        animation-delay: #{$i/2}s;
+        -webkit-animation-duration:1s;
+        -webkit-animation-delay: #{$i/2}s;
+        -moz-animation-duration:1s;
+        -moz-animation-delay: #{$i/2}s;
+    }
+
+    .tag-list-#{$i} {
+        animation-duration:0.5s;
+        animation-delay: #{$i/2}s;
+        -webkit-animation-duration:1s;
+        -webkit-animation-delay: #{$i/2}s;
+        -moz-animation-duration:1s;
+        -moz-animation-delay: #{$i/2}s;
+    }
+
+  } 
+
